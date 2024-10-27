@@ -1,42 +1,53 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Full viewport setup */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+nav {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  background-color: #f0f0f0; /* Optional: add background color for visibility */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav h2 {
+  margin: 0;
+  padding: 0.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Rest of your CSS remains the same */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
-.card {
-  padding: 2em;
+.input-container {
+  height: 100%;
+  width: 40%;
+  text-align: left;
+  background-color: yellow;
 }
 
-.read-the-docs {
-  color: #888;
+.output-container {
+  height: 100%;
+  width: 60%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;  /* Center .cv-page horizontally */
+  align-items: flex-start;  /* Align to the top */
+  padding: 1rem;            /* Padding to keep .cv-page away from edges */
+}
+
+.cv-page {
+  background-color: white;      /* White background for page effect */
+  height: 80%;
+  width: 80%;                   /* Adjust width as needed for a page-like feel */
+  padding: 1.5rem;              /* Internal padding for content */
+  margin-top: 1rem;             /* Margin to separate from .output-container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+  border-radius: 1px;           /* Rounded corners for a polished look */
 }
