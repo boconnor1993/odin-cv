@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import './App.css'
+import GeneralInfo from './components/GeneralInfo'
+import ExperienceInfo from './components/ExperienceInfo'
+import EducationInfo from './components/EducationInfo'
 
 function App() {
   return (
@@ -10,28 +13,9 @@ function App() {
       <div className='container'>
 
         <div className='input-container'>
-          <div className='general-info'>
-            <h2>General Information</h2>
-            <div className='general-info-container'>
-              
-            </div>
-          </div>
-
-          <div className='experience-info'>
-            <h2>Professional Experience</h2>
-            <div className='experience-info-container'></div>
-            <div className='button-container'>
-              <button>Add New</button>
-            </div>
-          </div>
-
-          <div className='education-info'>
-            <h2>Education</h2>
-            <div className='education-info-container'></div>
-            <div className='button-container'>
-              <button>Add New</button>
-            </div>
-          </div>      
+          <GeneralInfo />
+          <ExperienceInfo />
+          <EducationInfo />     
         </div>
         <div className='output-container'>
           <div className='cv-page'>
