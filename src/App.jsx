@@ -3,6 +3,7 @@ import './App.css'
 import GeneralInfo from './components/GeneralInfo'
 import ExperienceInfo from './components/ExperienceInfo'
 import EducationInfo from './components/EducationInfo'
+import CVPreview from './components/CVPreview'
 
 function App() {
   const [generalInfo, setGeneralInfo] = useState({
@@ -27,14 +28,17 @@ function App() {
       </nav>
       <div className='container'>
         <div className='input-container'>
-        <GeneralInfo generalInfo={generalInfo} setGeneralInfo={setGeneralInfo} />
-        <EducationInfo education={education} setEducation={setEducation} />
-        <ExperienceInfo experience={experience} setExperience={setExperience} />
-   
+          <GeneralInfo generalInfo={generalInfo} setGeneralInfo={setGeneralInfo} />
+          <EducationInfo education={education} setEducation={setEducation} />
+          <ExperienceInfo experience={experience} setExperience={setExperience} />
         </div>
         <div className='output-container'>
           <div className='cv-page'>
-
+            <CVPreview 
+              generalInfo={generalInfo} 
+              education={education} 
+              experience={experience} 
+            />
           </div>
         </div>
       </div>

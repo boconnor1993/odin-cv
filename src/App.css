@@ -29,13 +29,13 @@ nav h2 {
   height: 100%;
   width: 40%;
   text-align: left;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .output-container {
   height: 100%;
   width: 60%;
-  background-color: lightblue;
+  /* background-color: lightblue; */
   display: flex;
   justify-content: center;  /* Center .cv-page horizontally */
   align-items: flex-start;  /* Align to the top */
@@ -44,6 +44,7 @@ nav h2 {
 
 .cv-page {
   background-color: white;      /* White background for page effect */
+  color: black;
   height: 80%;
   width: 80%;                   /* Adjust width as needed for a page-like feel */
   padding: 1.5rem;              /* Internal padding for content */
