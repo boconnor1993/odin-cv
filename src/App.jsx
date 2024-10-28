@@ -12,11 +12,11 @@ function App() {
   });
 
   const [education, setEducation] = useState([
-    { school: '', title: '', dates: '' } // Initial empty entry
+    { school: '', title: '', startdate: '', enddate: '' } // Initial empty entry
   ]);
 
   const [experience, setExperience] = useState([
-    { company: '', position: '', responsibilities: '', dates: '' }
+    { company: '', position: '', responsibilities: '', startdate: '', enddate: '' }
   ]);
 
 
