@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 function CVEducationPreview({ education }) {
     return (
         <div className="cv-education-preview">
-            <h3>Professional Education</h3>
+            <h3>Education</h3>
             {education.map((entry, index) => (
                 <div key={index} className="education-entry">
-                    <h4>{entry.school}</h4>
-                    <p>Qualification: {entry.title}</p>
-                    <p>{entry.startdate ? entry.startdate.toDateString() : ''} to {entry.enddate ? entry.enddate.toDateString() : ''}</p>
+                    <h4>{entry.school || "School not provided"}</h4>
+                    <p>Qualification: {entry.title || "Qualification not specified"}</p>
+                    <p>
+                        {entry.startdate ? entry.startdate.toDateString() : ''} to {entry.enddate ? entry.enddate.toDateString() : 'Ongoing'}
+                    </p>
                 </div>
             ))}
         </div>

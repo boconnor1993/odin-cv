@@ -6,10 +6,12 @@ function CVExperiencePreview({ experience }) {
             <h3>Professional Experience</h3>
             {experience.map((entry, index) => (
                 <div key={index} className="experience-entry">
-                    <h4>{entry.company}</h4>
-                    <p>Position: {entry.position}</p>
-                    <p>Responsibilities: {entry.responsibilities}</p>
-                    <p>{entry.startdate ? entry.startdate.toDateString() : ''} to {entry.enddate ? entry.enddate.toDateString() : ''}</p>
+                    <h4>{entry.company || "Company not provided"}</h4>
+                    <p>Position: {entry.position || "Position not specified"}</p>
+                    <p>Responsibilities: {entry.responsibilities || "Not specified"}</p>
+                    <p>
+                        {entry.startdate ? entry.startdate.toDateString() : ''} to {entry.enddate ? entry.enddate.toDateString() : 'Ongoing'}
+                    </p>
                 </div>
             ))}
         </div>

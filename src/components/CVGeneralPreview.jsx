@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 function CVGeneralPreview({ generalInfo }) {
     return (
         <div className="cv-general-preview">
-            <h3>{generalInfo.name}</h3>
-            <p>Email: {generalInfo.email}</p>
-            <p>Phone: {generalInfo.phone}</p>
+            <h3>{generalInfo.name || "Name not provided"}</h3>
+            <p>Email: {generalInfo.email || "Available upon request"}</p>
+            <p>Phone: {generalInfo.phone || "Available upon request"}</p>
         </div>
     );
 }
+
 
 // PropTypes for validation
 CVGeneralPreview.propTypes = {
