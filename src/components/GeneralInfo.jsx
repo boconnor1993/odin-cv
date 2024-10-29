@@ -1,3 +1,4 @@
+import '../styles/GeneralInfo.css';
 import PropTypes from 'prop-types';
 
 function GeneralInfo({ generalInfo, setGeneralInfo }) {

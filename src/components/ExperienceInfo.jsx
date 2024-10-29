@@ -1,3 +1,4 @@
+import '../styles/ExperienceInfo.css';
 import PropTypes from 'prop-types';
 
 function ExperienceInfo({ experience, setExperience }) {

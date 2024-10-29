@@ -1,3 +1,4 @@
+import '../styles/CVGeneralPreview.css'
 import PropTypes from 'prop-types';
 
 function CVGeneralPreview({ generalInfo }) {

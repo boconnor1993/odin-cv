@@ -1,0 +1,17 @@
+.cv-general-preview {
+    padding: 1rem;
+}
+
+.cv-general-preview h3 {
+    font-size: 1.8rem;
+    color: #213547;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+
+.cv-general-preview p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.3rem 0;
+    line-height: 1.6;
+}

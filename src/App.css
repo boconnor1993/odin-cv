@@ -18,37 +18,37 @@ nav h2 {
   padding: 0.2rem;
 }
 
-/* Rest of your CSS remains the same */
+/* Main Container Styling */
 .container {
   display: flex;
   width: 100%;
   height: 100%;
 }
 
+/* Input and Output Containers */
 .input-container {
-  height: 100%;
   width: 40%;
-  text-align: left;
-  /* background-color: yellow; */
+  padding: 2rem;
+  overflow-y: visible;  /* Allow content to expand without scroll */
+  border-right: 1px solid #e0e0e0;
 }
 
 .output-container {
   height: 100%;
   width: 60%;
-  /* background-color: lightblue; */
   display: flex;
-  justify-content: center;  /* Center .cv-page horizontally */
-  align-items: flex-start;  /* Align to the top */
-  padding: 1rem;            /* Padding to keep .cv-page away from edges */
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
 }
 
+
 .cv-page {
-  background-color: white;      /* White background for page effect */
-  color: black;
-  height: 80%;
-  width: 80%;                   /* Adjust width as needed for a page-like feel */
-  padding: 1.5rem;              /* Internal padding for content */
-  margin-top: 1rem;             /* Margin to separate from .output-container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
-  border-radius: 1px;           /* Rounded corners for a polished look */
+  background-color: white;
+  color: #213547;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
 }

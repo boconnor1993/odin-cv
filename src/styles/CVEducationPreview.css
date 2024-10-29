@@ -1,0 +1,31 @@
+.cv-education-preview {
+    padding: 1rem;
+}
+
+.cv-education-preview h3 {
+    font-size: 1.8rem;
+    color: #213547;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+
+.cv-education-preview .education-entry {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+.cv-education-preview h4 {
+    font-size: 1.4rem;
+    color: #2a3d5c;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.cv-education-preview p {
+    font-size: 1rem;
+    color: #444;
+    margin: 0.3rem 0;
+    line-height: 1.6;
+}

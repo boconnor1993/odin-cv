@@ -1,3 +1,4 @@
+import '../styles/CVEducationPreview.css'
 import PropTypes from 'prop-types';
 
 function CVEducationPreview({ education }) {

@@ -1,0 +1,30 @@
+.cv-experience-preview {
+    padding: 1rem;
+}
+
+.cv-experience-preview h3 {
+    font-size: 1.8rem;
+    color: #213547;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+
+.experience-entry {
+    padding: 0.5rem;
+}
+
+.experience-entry h4 {
+    font-size: 1.4rem;
+    color: #2a3d5c;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.experience-entry p {
+    font-size: 1rem;
+    color: #444;
+    margin: 0.3rem 0;
+    line-height: 1.6;
+}

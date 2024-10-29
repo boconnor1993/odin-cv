@@ -1,3 +1,4 @@
+import '../styles/EducationInfo.css';
 import PropTypes from 'prop-types';
 
 function EducationInfo({ education, setEducation }) {

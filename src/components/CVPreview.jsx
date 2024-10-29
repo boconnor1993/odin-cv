@@ -1,3 +1,4 @@
+import '../styles/CVPreview.css'
 import PropTypes from 'prop-types';
 import CVGeneralPreview from './CVGeneralPreview';
 import CVEducationPreview from './CVEducationPreview';

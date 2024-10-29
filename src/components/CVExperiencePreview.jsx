@@ -1,3 +1,4 @@
+import '../styles/CVExperiencePreview.css'
 import PropTypes from 'prop-types';
 
 function CVExperiencePreview({ experience }) {
